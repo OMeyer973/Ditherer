@@ -2,7 +2,7 @@
 
 Small app to blur an image by exchanging pixels 2 by 2.
 
-<img src="dither.gif" width="100%">
+<img src="https://media.giphy.com/media/9S3fcFkUlhlYNgs57G/giphy.gif" width="100%">
 
 ## How to use ?
 
