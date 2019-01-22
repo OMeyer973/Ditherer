@@ -79,26 +79,16 @@ void draw () {
 void exchange2Pixels(PImage diffuse) {
   int x = (int)random(0, sizeX-1);
   int y = (int)random(0, sizeY-1);
-  color pixelColor = safeGetPixel(x,y);
+  color pixelColor = diffuse.get(x,y);
   
   int x2 = x + (int)random(-ditterRadius, ditterRadius);
+  x2 = constrain(x2, 0, sizeX-1);
   int y2 = y + (int)random(-ditterRadius, ditterRadius);
-  color pixelColor2 = safeGetPixel(x2,y2);
-
+  y2 = constrain(y2, 0, sizeY-1);
+  color pixelColor2 = diffuse.get(x2,y2);
+  
   diffuse.set(x,  y,  pixelColor2);
   diffuse.set(x2, y2, pixelColor);
-}
-
-color safeGetPixel(int x, int y) {
-  if (x>=sizeX)
-    x = sizeX-x;
-  if (x<0)
-    x=-x;
-  if (y>=sizeY)
-    y = sizeY-y;
-  if (y<0)
-    y=-y;
-  return diffuse.get(x,y);
 }
 
 void selectFile() {
