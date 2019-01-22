@@ -1,7 +1,6 @@
 // small app to blur an image by exchanging pixels 2 by 2
 
 import controlP5.*;
-import com.hamoid.*;
 
 int ditterRadius = 5;
 int ditterSpeed = 100;
