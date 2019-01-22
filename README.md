@@ -10,5 +10,5 @@ select a file, change the UI sliders, save the dithered image.
 
 ----------------
 
-made by myro_973 - 2017.11
+made by myro_973 - 2019.01
 www.instagram.com/myro_973/
